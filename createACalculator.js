@@ -36,7 +36,7 @@ function absoluteValue(num) {
     return Math.abs(num);
 }
 // Test Absolute Value Function
-console.log(`The Absolute Value of ${num} is: ${absoluteValue(-45.67)}`);
+console.log(`The Absolute Value of -45.67 is: ${absoluteValue(-45.67)}`);
 // Output: 45.67
 
 //Power Calculation: Calculate and return the value of a base raised to a specific power.
@@ -53,7 +53,7 @@ function squareRootFinder(num) {
     return Math.sqrt(num);
 }
 // Test Square Root Function
-console.log(`The Square Root Of ${num} is: ${squareRootFinder(144)}`);
+console.log(`The Square Root Of 144 is: ${squareRootFinder(144)}`);
 // Output: 12
 
 // 4. Maximum and Minimum Finder: From a given set of numbers, determine the largest and smallest values.
@@ -75,7 +75,13 @@ function randomNumberGenerator(min, max) {
 }
 
 // Test Random Number Function
-console.log(`The Random Number is: ${randomNumberGenerator(1,50)}`);
+console.log(`The Random Number between 1 & 50 is: ${randomNumberGenerator(1,50)}`);
 
+//Custom Rounding: Round a number to a specified number of decimal places.
+function roundTo(num, decimalPlace) {
+    let factor = Math.pow(10, decimalPlace);
+    return Math.round(num * factor) / factor;
+}
 
+console.log(`The Rounded Number of 23.67891 to 2 decimal value is ${roundTo(23.67891, 2)}`);
 
